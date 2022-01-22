@@ -19,20 +19,23 @@ Cr4ck multi brute force
  pkg update && pkg upgrade
  pkg install python && pkg install python2
  pkg install git
- git clone https://github.com/Yayan-XD/Cr4ck
+ git clone https://github.com/Mantalstudio/MHI-PRO
 ```
 ### And Cr4ck this script
 ```bash
-$ cd Cr4ck
+$ cd MHI-PRO
 $ bash setup.sh
 $ python Cr4ck.py
 ```
 
 ### Screenshot
-* Note! Bila akunya cp simpan saja 1/5 hari nanti kebuka sendiri..
+
+    
 <img src="https://github.com/Yayan-XD/Cr4ck/blob/main/img/IMG_20210304_060211.jpg" />
 
 
 
-* Notice Me : Please Don't Change Name Author
+
+    
+    * Notice Me : Please Don't Change Name Author
 Thanks For Using My Script
