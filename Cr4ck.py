@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-#Males gw encrypt Tod jika mau recode, recode aja
-#Tapi ngotak dikit jangan Lo jual belikan sc ini kontol
-#Code by YayanXD 
-#Created 05-07-2020
-#My facebook (https://www.facebook.com/KM39453)
+#I'm too lazy to encrypt Tod, if you want to recode, just recode it
+#But don't worry a bit, don't buy and sell this sc dick
+#Code by Mantal Studio
+#Created 05-01-2022
 
 import os,sys,re,time,json,random,requests
 from bs4 import BeautifulSoup as parser
@@ -28,9 +27,9 @@ def kontol():
      ╚██████╗██║  ██║     ██║╚██████╗██║  ██╗
 \x1b[1;91m  •\x1b[1;93m•\x1b[1;92m•\x1b[1;97m ╚═════╝╚═╝  ╚═╝     ╚═╝ ╚═════╝╚═╝  ╚═╝\x1b[1;92m •\x1b[1;93m•\x1b[1;91m•
 \x1b[1;94m────────────────────────────────────────────────────
-\x1b[1;97m [\x1b[1;94m•\x1b[1;92m•\x1b[1;97m] Author   : YayanXD
-\x1b[1;97m [\x1b[1;92m•\x1b[1;94m•\x1b[1;97m] Github   : https://github.com/Yayan-XD
-\x1b[1;97m [\x1b[1;94m•\x1b[1;92m•\x1b[1;97m] Facebook : https://www.facebook.com/KM39453
+\x1b[1;97m [\x1b[1;94m•\x1b[1;92m•\x1b[1;97m] Author   : Mantal Studio   
+\x1b[1;97m [\x1b[1;92m•\x1b[1;94m•\x1b[1;97m] Github   : https://github.com/Mantalstudio
+\x1b[1;97m [\x1b[1;94m•\x1b[1;92m•\x1b[1;97m] Facebook : https://www.facebook.com/xxxxx
 \x1b[1;94m────────────────────────────────────────────────────""")
 
 def jembut():
@@ -41,9 +40,9 @@ def jembut():
      ╚██████╗██║  ██║     ██║╚██████╗██║  ██╗
 \x1b[1;91m  •\x1b[1;93m•\x1b[1;92m•\x1b[1;97m ╚═════╝╚═╝  ╚═╝     ╚═╝ ╚═════╝╚═╝  ╚═╝\x1b[1;92m •\x1b[1;93m•\x1b[1;91m•
 \x1b[1;94m────────────────────────────────────────────────────
-\x1b[1;97m [\x1b[1;92m+\x1b[1;97m] Author   : YayanXD
-\x1b[1;97m [\x1b[1;92m+\x1b[1;97m] Github   : https://github.com/Yayan-XD
-\x1b[1;97m [\x1b[1;92m+\x1b[1;97m] Facebook : https://www.facebook.com/KM39453
+\x1b[1;97m [\x1b[1;92m+\x1b[1;97m] Author   : Mantal Studio   
+\x1b[1;97m [\x1b[1;92m+\x1b[1;97m] Github   : https://github.com/Mantalstudio
+\x1b[1;97m [\x1b[1;92m+\x1b[1;97m] Facebook : https://www.facebook.com/xxxxx
 \x1b[1;94m────────────────────────────────────────────────────""")
 
 def yayanxd():
@@ -57,7 +56,7 @@ def moch_yayan():
     print("\033[97m [\033[96m01\033[97m] Start  Cr4ck ID")
     print("\033[97m [\033[96m02\033[97m] Tutor  How to Get Fb Cookies")
     print("\033[97m [\033[96m03\033[97m] Joined Grup Fb ❤️ RATU ERROR ❤️")
-    print("\033[97m [\033[96m04\033[97m] Joined Grup Fb Viral")
+    print("\033[97m [\033[96m04\033[97m] Joined Grup Fb xxxx")
     print("\033[97m [\033[96m05\033[97m] Update Tools")
     print("\033[97m [\033[91m00\033[97m] Exit")
     print("\x1b[1;94m────────────────────────────────────────────────────")
@@ -85,11 +84,11 @@ def moch_yayan():
              cek = {"cookie":cek}
              ismi = ses.get(mbasic.format("/me",verify=False),cookies=cek).content
              if "mbasic_logout_button" in str(ismi):
-                     if "Apa yang Anda pikirkan sekarang" in str(ismi):
+                     if "What do you think now" in str(ismi):
                              with open("cookies","w") as f:
                                      f.write(cek["cookie"])
                      else:
-                           print("\033[1;97m[\033[1;94m•\033[1;97m] \033[00mUbah bahasa, harap tunggu\033[1;91m!!\033[00m")
+                           print("\033[1;97m[\033[1;94m•\033[1;97m] \033[00mChange language, please wait\033[1;91m!!\033[00m")
                            try:
                                   requests.get(mbasic.format(parser(ismi,"html.parser").find("a",string="Bahasa Indonesia")["href"]),cookies=cek)
                            except:
@@ -156,8 +155,8 @@ def moch_yayan():
                  else:
                         id.append(x[1] + '|' + x[0].split('/')[1].split('?')[0])
                  print('\r\033[1;97m [\033[1;94m•\033[1;97m] \033[1;96m' + str(len(id)) + " \033[1;97mProcess Of Retrieving ID... ",end="")
-             if 'Lihat Teman Lain' in str(raw):
-                 getid(mbasic.format(parser(raw,'html.parser').find('a',string='Lihat Teman Lain')['href']))
+             if 'See More Friends' in str(raw):
+                 getid(mbasic.format(parser(raw,'html.parser').find('a',string='See More Friends')['href']))
              return id
          def fromlikes(url):
              try:
@@ -176,8 +175,8 @@ def moch_yayan():
                  else:
                          id.append(user[1] + "|" + user[0].split('/')[1])
                  print(f'\r\033[1;97m [\033[1;94m•\033[1;97m] \033[1;96m{str(len(id))} \033[1;97mProcess Of Retrieving ID... ',end="")
-             if 'Lihat Selengkapnya' in str(like):
-                 getlike(mbasic.format(parser(like,'html.parser').find('a',string="Lihat Selengkapnya")["href"]))
+             if 'View more' in str(like):
+                 getlike(mbasic.format(parser(like,'html.parser').find('a',string="View more)["href"]))
              return id
          def bysearch(option):
              search = requests.get(option,cookies=kuki).content
@@ -188,8 +187,8 @@ def moch_yayan():
                   else:
                          id.append(user[1] + "|" + user[0].split("?")[0])
                   print(f"\r\033[1;97m [\033[1;94m•\033[1;97m] \033[1;96m{str(len(id))} \033[1;97mProcess Of Retrieving ID... ",end="")
-             if "Lihat Hasil Selanjutnya" in str(search):
-                  bysearch(parser(search,'html.parser').find("a",string="Lihat Hasil Selanjutnya")["href"])
+             if "See Next Results" in str(search):
+                  bysearch(parser(search,'html.parser').find("a",string="See Next Results")["href"])
              return id
          def grubid(endpoint):
              grab = requests.get(endpoint,cookies=kuki).content
@@ -200,8 +199,8 @@ def moch_yayan():
                  else:
                          id.append(user[1] + "|" + user[0])
                  print(f"\r\033[1;97m [\033[1;94m•\033[1;97m] \033[1;96m{str(len(id))} \033[1;97mProcess Of Retrieving ID... ",end="")
-             if "Lihat Selengkapnya" in str(grab):
-                 grubid(mbasic.format(parser(grab,"html.parser").find("a",string="Lihat Selengkapnya")["href"]))
+             if "View more" in str(grab):
+                 grubid(mbasic.format(parser(grab,"html.parser").find("a",string="View more")["href"]))
              return id
          if __name__ == '__main__':
                try:
@@ -225,7 +224,7 @@ def moch_yayan():
                          yayanxd()
                    elif memek == '0' or memek =='00':
                          aahh("\n\033[1;92m Thank you for using my tools.\n  Don't forget to subscribe to My YouTube Channel\n\n")
-                         os.system('xdg-open https://youtube.com/channel/UCNvDaXoyAVCNJbSqtaXA-mg')
+                         os.system('xdg-open https://youtube.com/channel/xxxx-mg')
                          exit()                   	
                    elif memek == '7' or memek =='07':
                          print("\n\x1b[1;97m [\x1b[1;96m+\x1b[1;97m] \x1b[1;96mPlease Wait... ")
@@ -360,7 +359,7 @@ def moch_yayan():
          yayanxd()
     elif yayan == "0" or yayan =="00":
          aahh("\n\033[1;92m Thank you for using my tools.\n  Don't forget to subscribe to My YouTube Channel\n\n")
-         os.system('xdg-open https://youtube.com/channel/UCNvDaXoyAVCNJbSqtaXA-mg')
+         os.system('xdg-open https://youtube.com/channel/xxxxx-mg')
          exit()                   	
 
 if __name__=="__main__":
