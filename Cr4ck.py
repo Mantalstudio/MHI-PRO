@@ -176,7 +176,7 @@ def moch_yayan():
                          id.append(user[1] + "|" + user[0].split('/')[1])
                  print(f'\r\033[1;97m [\033[1;94m•\033[1;97m] \033[1;96m{str(len(id))} \033[1;97mProcess Of Retrieving ID... ',end="")
              if 'View more' in str(like):
-                 getlike(mbasic.format(parser(like,'html.parser').find('a',string="View more)["href"]))
+                 getlike(mbasic.format(parser(like,'html.parser').find('a',string="View more")["href"]))
              return id
          def bysearch(option):
              search = requests.get(option,cookies=kuki).content
