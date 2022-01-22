@@ -20,12 +20,9 @@ Cr4ck multi brute force
  pkg install python && pkg install python2
  pkg install git
  git clone https://github.com/Mantalstudio/MHI-PRO
-```
-### And Cr4ck this script
-```bash
-$ cd MHI-PRO
-$ bash setup.sh
-$ python Cr4ck.py
+ cd MHI-PRO
+ bash setup.sh
+ python Cr4ck.py
 ```
 
 ### Screenshot
