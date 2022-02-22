@@ -30,7 +30,7 @@ def free():
         bh = aq.split("', '")
         naa = ("%s"%(h_tkn))
         print(naa)
-        print("sucsses generated")
+        print("success generated")
 def login():
 	os.system("clear")
 	try:
@@ -38,7 +38,7 @@ def login():
 		main()
 	except (KeyError, IOError):
 		os.system('clear')
-		print("\n    [  ANDA HARUS LOGIN ]")
+		print("\n    [  YOU MUST LOGINN ]")
 		token = input('\n [ TOKEN : ');print("]")
 		try:
 			zedd = open('token.txt', 'w')
@@ -77,21 +77,21 @@ def main():
         na1m = a['name']
     except (KeyError, IOError):
         os.system('clear')
-        print("\n [!] token kadaluwarsa!")
+        print("\n [!] expired tokens!")
         os.system('rm -f token.txt')
         login()
     except requests.exceptions.ConnectionError:
         exit("[!] you are not connected to the internet!")
-    print(" [ selamat %s%s ]\n"%(salam212,na1m));time.sleep(0.03)
+    print(" [ safe %s%s ]\n"%(salam212,na1m));time.sleep(0.03)
     print("")
     print("*target id must be public")
-    id = input('*id post : ')
+    id = input('* Post ID : ')
     m=int(input(f'*limit  : '))
     p=int(input(f'*Delay  :'))
     time.sleep(1)
-    print("*have a nice day")
+    print("*Have a nice day")
     input("*Enter To start")
-    print('*please wait a few minutes ... \n')
+    print('*Please wait a few minutes ... \n')
     print("*type ctrl+z to stop")
     time.sleep(2)
     time.sleep(30)
@@ -106,9 +106,9 @@ def main():
 	         sys.stdout.write(f" \r[STATUS]>  ")
 	         sys.stdout.flush()
     except requests.exceptions.ConnectionError:
-	    exit('! Koneksi Bermasalah')
+	    exit('! Connection Problem')
 if __name__ == '__main__':
 	os.system("git pull")
 	os.system("clear")
-	print("\n*Facebook : Georgy Alifich\n*Github : github.com/xnsvn\n*yt : AFK YT\n")
+	print("\n*Facebook : Mantalstudioo\n*Github : github.com/Mantalstudio\n*")
 	login()
