@@ -329,8 +329,9 @@ def file():
 				sol().print(mark(hehe, style='red'))
 				time.sleep(2)
 				back()
-
-try:
+	# DUMP ID PUBLIK
+def dump_publik():
+	try:
 		token = open('.token.txt','r').read()
 	except IOError:
 		exit()
