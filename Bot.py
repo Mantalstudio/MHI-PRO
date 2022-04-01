@@ -330,9 +330,7 @@ def file():
 				back()
 
 # DUMP ID PUBLIK
-def name(arg):
-	# comment: 
-# end def dump_publik():
+def dump_publik():
 	try:
 		token = open('.token.txt','r').read()
 	except IOError:
