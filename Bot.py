@@ -342,8 +342,13 @@ def dump_publik():
 	print(x+'['+h+'⭐'+kk+'] TYPER "me" IF YOU WANT TO DUMP ID FROM LOGIN TOKEN')
 	pil = input(x+'['+p+'⭐'+kk+'] Enter Target ID : ')
 	try:
-		koh = requests.get('https://graph.facebook.com/v2.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
-		grex = json.loads(koh.text)['name']
+		col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
+			for mi in col['friends']['data']:
+				try:
+					iso = (mi['id']+'|'+mi['name'])
+					if iso in id:pass
+					else:id.append(iso)
+				except:continue
 		kras = '# INFO TARGET'
 		kras2 = mark(kras, style='green')
 		sol().print(kras2)
