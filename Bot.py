@@ -551,7 +551,6 @@ def ceker(idf,pw):
 		print('\r%s++++ %s|%s ----> CP       %s'%(b,idf,pw,x))
 		print('\r%s---> Cant Check Option (Check Login In Lite/Mbasic)%s'%(u,x))
 		open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
-                cp+=1
 # OPSI CEKER
 def cek_opsi():
 	c = len(akun)
