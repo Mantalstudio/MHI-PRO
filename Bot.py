@@ -330,59 +330,32 @@ def file():
 				time.sleep(2)
 				back()
 
-# DUMP ID PUBLIK
-def dump_publik():
-	try:
-		token = open('token.txt','r').read()
+try:
+		token = open('.token.txt','r').read()
 	except IOError:
 		exit()
 	win = '# DUMP ID PUBLIK'
 	win2 = mark(win, style='green')
 	sol().print(win2)
 	print(x+'['+h+'⭐'+kk+'] TYPER "me" IF YOU WANT TO DUMP ID FROM LOGIN TOKEN')
-	pil = input(x+'['+p+'⭐'+kk+'] Enter Target ID : ')
+	pil = input(x+'['+p+'⭐'+x+'] Masukkan ID Target : ')
 	try:
-		col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
-			for mi in col['friends']['data']:
-				try:
-					iso = (mi['id']+'|'+mi['name'])
-					if iso in id:pass
-					else:id.append(iso)
-				except:continue
-		kras = '# INFO TARGET'
-		kras2 = mark(kras, style='green')
-		sol().print(kras2)
-		print(x+'['+h+'⭐'+x+'] Nama  : '+str(grex))
-	except (KeyError,IOError):
-		teks = '# ID Not Found'
-		teks2 = mark(teks, style='red')
-		sol().print(teks2)
-		time.sleep(2)
-		exit()
-	except requests.exceptions.ConnectionError:
-		li = '# PROBLEM INTERNET CONNECTION, CHECK AND TRY AGAIN'
-		lo = mark(li, style='red')
-		sol().print(lo, style='cyan')
-		exit()
-	try:
-		koh2 = requests.getget('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
-		koh3 = json.loads(koh2.text)
-		for pi in koh3['data']:
+		koh2 = requests.get('https://graph.facebook.com/v2.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
+		for pi in koh2['friends']['data']:
 			try:id.append(pi['id']+'|'+pi['name'])
 			except:continue
-		print(x+'['+h+'⭐'+x+'] Total : '+str(len(id)))
+		print(x+'['+h+'•'+x+'] Total : '+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
-		li = '# PROBLEM INTERNET CONNECTION, CHECK AND TRY AGAIN'
+		li = '# INTERNET CONNECTION PROBLEMS CHECK & TRY AGAIN'
 		lo = mark(li, style='red')
-		sol().print(lo, style='cyan')
+		sol().print(lo, style='yellow')
 		exit()
 	except (KeyError,IOError):
 		teks = '# NOT PUBLIC FRIENDSHIP OR BROKEN TOKEN'
 		teks2 = mark(teks, style='red')
 		sol().print(teks2)
 		exit()
-
 # DUMP ID Multi
 def dump_massal():
 	try:
