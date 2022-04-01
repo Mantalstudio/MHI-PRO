@@ -331,33 +331,32 @@ def file():
 
 # DUMP ID PUBLIK
 def dump_publik():
-	try:
+    try:
 		token = open('.token.txt','r').read()
 	except IOError:
 		exit()
 	win = '# DUMP ID PUBLIK'
 	win2 = mark(win, style='green')
 	sol().print(win2)
-	print(x+'['+h+'⭐'+kk+'] TYPER "me" IF YOU WANT TO DUMP ID FROM LOGIN TOKEN')
-	pil = input(x+'['+p+'⭐'+kk+'] ENTER TARGET ID : ')
+	print(x+'['+h+'•'+x+'] Ketik "me" Jika Ingin Dump ID Dari Teman')
+	pil = input(x+'['+p+'f'+x+'] Masukkan ID Target : ')
 	try:
 		koh2 = requests.get('https://graph.facebook.com/v2.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
 		for pi in koh2['friends']['data']:
 			try:id.append(pi['id']+'|'+pi['name'])
 			except:continue
-		print(x+'['+h+'⭐'+kk+'] Total : '+str(len(id)))
+		print(x+'['+h+'•'+x+'] Total : '+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
-		li = '# INTERNET CONNECTION PROBLEMS CHECK & TRY AGAIN'
+		li = '# KONEKSI INTERNET BERMASALAH, PERIKSA & COBA LAGI'
 		lo = mark(li, style='red')
-		sol().print(lo, style='yellow')
+		sol().print(lo, style='cyan')
 		exit()
 	except (KeyError,IOError):
-		teks = '# NOT PUBLIC FRIENDSHIP OR BROKEN TOKEN'
+		teks = '# PERTEMANAN TIDAK PUBLIK ATAU TOKEN RUSAK'
 		teks2 = mark(teks, style='red')
 		sol().print(teks2)
 		exit()
-
 	except requests.exceptions.ConnectionError:
 		li = '# PROBLEM INTERNET CONNECTION, CHECK AND TRY AGAIN'
 		lo = mark(li, style='red')
